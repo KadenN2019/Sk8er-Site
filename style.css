@@ -1,0 +1,534 @@
+Html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("./assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*icon tabs*/
+
+.sub-w-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sub{
+    color:white;
+    display: flex;
+    justify-content: baseline;
+}
+
+.dot{
+    margin-left: 5px;
+    margin-top: 0px;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+.dot2{
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    line-height: 7px;
+    font-size: 30px;
+
+}
+
+
+#icons {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+}
+
+#icons > div {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    text-align:center;
+    line-height:50px;
+}
+
+#icons div:nth-child(1) {
+    background-color: rgb(105, 119, 170);
+    color: white;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3)
+    
+}
+
+#icons div:nth-child(2){
+    color: white;
+    background-color: rgb(197, 132, 44);
+    box-shadow: 0px 5px rgba(255, 255, 255, .3)
+}
+
+#icons div:nth-child(3){
+    color: white;
+    background-color:rgb(95, 130, 192);
+    box-shadow: 0px 5px rgba(255, 255, 255, .3)
+
+}
+
+#icons div:nth-child(4){
+    color: white;
+    background-color:rgb(169, 49, 40);
+    box-shadow: 0px 5px rgba(255, 255, 255, .3)
+
+}
+
+
+
+
+/*menu bars*/
+
+.directory {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.directory main {
+    background: rgb(171, 36, 41);
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 243px;
+    text-align: center;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3)
+}
+
+/*top image*/
+
+#topimage {
+    width: 1000px;
+    height: 400px;
+    border: solid 10px white;
+    padding: 0px 10px;
+    background-image: url("./assets/top-image.png");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-x: -140px;
+    background-position-y: -155px;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+    position: relative;
+}
+
+.logo {
+    /*background-image: url("./assets/peralta-logo.png");*/
+    width: auto;
+    height: auto;
+    /*background-repeat: no-repeat;
+    background-size: 58%;
+    background-position-x: 4px;
+    background-position-y: 74px;*/
+    position: absolute;
+    bottom: 75px;
+}
+
+.grid{
+    width: 980px;
+    height: 390px;
+    background-image: url("./assets/grid.png");
+    background-size: 41%;
+    background-position: center;
+    margin-left: -10px;
+    opacity: .5;
+}
+
+/*circles*/
+.circle { 
+    width: 15px;
+    height: 15px;
+    background: white; 
+    border-radius: 7.5px;
+    margin: 10px;
+ }
+
+ #circle{
+    display: flex;
+    justify-content: center;
+    margin: -48px 0px 10px;
+}
+
+
+
+.circle2 { 
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, .3); 
+    border-radius: 7.5px;
+    margin: 10px;
+ }
+
+ #circle2{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 10px;
+}
+/*red dot*/
+.circle3 { 
+    width: 7.5px;
+    height: 7.5px;
+    background: rgb(171, 36, 41); 
+    border-radius: 50%;
+    margin: 10px;
+ }
+
+ #circle3{
+    display: flex;
+    justify-content: center;
+    margin: -42px 69px 10px 0px;
+}
+
+
+/*Articles*/
+
+.main-paragraphs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    grid-template-areas: "Paragraph1 Paragraph2 Paragraph3";
+    width: 1000px;
+    height: 300px;
+    margin: 30px 0px 110px;
+    
+}
+
+.Paragraph1, .Paragraph2, .Paragraph3 {
+    padding: 5px 20px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr, 1fr, 3fr, 1fr;
+    grid-template-areas: 
+    "title" 
+    "date" 
+    "paragraph"
+    "read";
+    height: 400px;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3)
+}
+
+.Paragraph1{
+    grid-area: Paragraph1;
+}
+
+.Paragraph2 {
+    grid-area: Paragraph2;
+}
+
+.Paragraph3 {
+    grid-area: Paragraph3;
+}
+
+.title {
+    font-size: 25px;
+    grid-area: title;
+}
+
+.date {
+    font-size: 14px;
+    color: #ccc;
+    grid-area: date;
+}
+
+.Para{
+    font-size: 12px;
+    line-height: 20px;
+    grid-area: paragraph;
+}
+
+.Read{
+    font-size: 14px;
+    color: rgb(171, 36, 41);
+    text-align: center;
+    grid-area: read;
+    font-weight: bold;
+}
+
+/*end of Paragraphs*/
+ /*Skateboarders*/
+.sk8box{
+    height: 65px;
+    width:175px;
+    position: absolute;
+    color: white;
+    background-color: rgb(171, 36, 41);
+    left: -200px;
+    top: 92.5px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+}
+.tri{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 32.5px 0 32.5px 15px;
+    border-color: transparent transparent transparent rgb(171, 36, 41);
+    position: absolute;
+    top: 92.5px;
+    left: -25px;
+
+}
+.tri2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 32.5px 0 32.5px 15px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 97.5px;
+    left: -25px;
+}
+/*Grid*/
+
+
+.photo-grid{
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap:15px;
+    grid-template-areas: 
+    "lance rodney tommy" 
+    "steve steve tommy";
+    width:1000px;
+    height:500px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.lance {
+    background-image: url("./assets/sk8er-4.png");
+    background-repeat: no-repeat;
+    background-size: 155%;
+    grid-area:lance;
+    border: solid 5px white;
+    background-position-x: -160px;
+    background-position-y: -15px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+}
+
+.rodney {
+    background-image: url("./assets/sk8er-3.png");
+    background-repeat: no-repeat;
+    background-size: 160%;
+    grid-area: rodney;
+    border: solid 5px white;
+    background-position-x: -40px;
+    background-position-y: -10px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+
+}
+
+.tommy{
+    background-image: url("./assets/sk8er-2.png");
+    background-repeat: no-repeat;
+    background-size: 280%;
+    grid-area:tommy;
+    background-position-x: -450px;
+    border: solid 5px white;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+}
+
+.steve{
+    background-image: url("./assets/sk8er-1.png");
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position-y: -90px;
+    border: solid 5px white;
+    grid-area:steve;
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+}
+
+
+.photo-grid p{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*end of grid*/
+
+/*skateboards*/
+
+.skateboards{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+}
+
+/*end of skateboards*/
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    margin: 20px 0px 40px;
+    padding:10px 0px 10px 0px;
+    height:350px;
+    box-shadow: 0px 5px rgba(255, 255, 255, .3);
+}
+
+
+/*Contact Paragraph*/
+
+.Contact-Info, #thescarn{
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact-Info{
+    width: 500px;
+    line-height: 30px;
+}
+
+.title2{
+    font-size: 25px;
+}
+
+.message{
+    font-size: 15px;
+}
+
+#icons2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+}
+
+#icons2 > div {
+    width: 35px;
+    height: 35px;
+    text-align:center;
+    line-height:35px;
+}
+
+#icons2 div:nth-child(1) {
+    background-color:#ccc;
+    color: white;
+    margin-right: 5px;
+}
+
+#icons2 div:nth-child(2){
+    color: white;
+    background-color:#ccc;
+    margin-right: 5px;
+}
+
+#icons2 div:nth-child(3){
+    color: white;
+    background-color:#ccc;
+    margin-right: 5px;
+}
+
+#icons2 div:nth-child(4){
+    color: white;
+    background-color:#ccc;
+    margin-right: 5px;
+}
+
+
+
+/*form*/
+
+#thescarn input{
+    border-top: 4px solid #ccc;
+    border-left: 4px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 400px;
+    margin: 10px 0px;
+}
+
+#thescarn textarea{
+    border-top: 4px solid #ccc;
+    border-left: 4px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 400px;
+    margin: 10px 0px ;
+    height: 130px;
+}
+
+
+form{
+    padding-top: 20px; 
+}
+
+
+textarea, input{
+    font-size: 16px;
+    padding: 5px;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(169, 49, 40);
+    color: white;
+
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end
+}
+
+
+/*media*/
+
+/*show*/
+@media only screen and (max-width: 1380px){
+    .sk8box{display: none}
+    .tri {display: none}
+    .tri2 {display: none}
+}
+
+
+
+
+
+
+
